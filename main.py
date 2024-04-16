@@ -18,6 +18,7 @@ def start(update, context):
                              text="Привет! Я бот, который поможет тебе решить социальные проблемы. Расскажи мне, что тебя беспокоит.")
 
 
+
 def get_gemini_response(prompt):
     model = genai.GenerativeModel('models/gemini-pro')
     result = model.generate_content(prompt)
